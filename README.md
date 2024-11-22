@@ -4,5 +4,5 @@ In this project I used Gemini Pro for text generation with Retrieval Augmented G
 **Dense Vector Embeddings**: Created dense vector embeddings of each page in the document using **Sentence Transformers**.  
 **Similarity-Based Retrieval**: Used **FAISS** for similarity search and clustering of dense vectors.  
   
-  After encoding a query into an embedding with Sentance transformer, I used FAISS to search for the most relevant document parts.
-  The RAG pipeline retrieves and outputs the closest document based on its similarity score (distance).
+  After encoding a query into an embedding with the same model used for document embedding, FAISS was used to search for the most relevant document parts.
+  The RAG pipeline retrieves and outputs the closest document based on its similarity score (vector distance).
